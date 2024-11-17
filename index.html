@@ -20,7 +20,7 @@
     <p>La potabilización es un proceso que sirve para potabilizar el agua cruda, agua que no ha sido sometida a ningun proceso, y que muchas veces
         excede algun parametro de los establecidos por la normativa.</p>
 
-    <a href="https://www.dof.gob.mx/nota_detalle.php?codigo=5650705&fecha=02/05/2022">ver normativa mexicana</a>
+    <a href="https://www.dof.gob.mx/nota_detalle.php?codigo=5650705&fecha=02/05/2022">Ver normativa mexicana.</a>
     
     <p>La potabilización puede ser de diferentes tipos por lo que varían los procesos y métodos que la conforman, a continuación se muestran algunos
         de los más comunes :</p>
@@ -77,7 +77,60 @@
     
     <h2>Solicitud de asesoría</h2>
 
-    
+    <form>
+        <label for="nom">Nombre : </label>
+        <input
+            id="nom"
+            name="nombre_comppleto"
+            type="text"
+            placeholder="Ingrese su nombre completo" 
+            minlength="2"
+            maxlength="50"
+            required
+        > 
+        <br><br>
+        
+        <label for="cor"> Correo : </label>
+        <input
+            id="cor"
+            name="correo"
+            type="text"
+            placeholder = "Ingrese su correo electónico" 
+            minlength="2"
+            maxlength="50"
+            required
+        > 
+        <br><br>
+       
+        <label for="ins">Organismo/institución : </label>
+        <input
+            id="ins"
+            name="institucion"
+            type="text"
+            placeholder="Organismo/institución a la que pertenece" 
+            minlength="2"
+            maxlength="100"
+            required
+        > 
+        <br>
+        <br>
+
+        <label>¿Cuál es su fuente de abastecimiento? 
+            <select name="fuente" required>
+                <option value=""selected hidden disabled>Selecciona una opción</option>
+                <option value="pozo">Pozo</option>
+                <option value="rio">Río</option>
+                <option value="lluvia">Lluvia</option>
+                <option value="lago">Lago</option>
+                <option value="nacimiento">Nacimiento</option>
+            </select>
+        </label>
+        <br>
+        <br>
+        <button type="submit">Solicitar asesoría</button>
+
+    </form>
+
     <br>
     <hr>
     <p>Si tiene problemas con abrir algun link se recomienda usar las DNS de Google las cuales son 8.8.8.8 y 8.8.4.4</p>
